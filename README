@@ -1,4 +1,3 @@
-
 # AutoGen Docker Code Executor with Environment Variables
 
 This repository provides an example of using AutoGen's `DockerCommandLineCodeExecutor` with Docker. The example demonstrates how to share environment variables with the `DockerCommandLineCodeExecutor`, which is particularly useful if you want the code executor to reference environment variables defined in a `.env` file.
