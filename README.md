@@ -1,6 +1,6 @@
 # AutoGen Docker Code Executor with Environment Variables
 
-This repository provides an example of using AutoGen's `DockerCommandLineCodeExecutor` with Docker. The example demonstrates how to share environment variables with the `DockerCommandLineCodeExecutor`, which is particularly useful if you want the code executor to reference environment variables defined in a `.env` file.
+This repository provides a detailed example of using AutoGen's DockerCommandLineCodeExecutor with Docker, specifically addressing the challenge of exposing environment variables to AI agents. I initially struggled to find a way for the code executor to access environment variables defined in a .env file. To solve this, the example combines a custom system message with the creation of a Docker image that includes the .env file, ensuring the variables are properly shared with the DockerCommandLineCodeExecutor.
 
 ## Features
 
@@ -20,8 +20,8 @@ git https://github.com/JKapostins/autogen_docker_envs.git
 It is recommended to use a virtual environment to manage your dependencies. Here’s how you can set it up:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows use `.\pyautogen\Scripts\activate`
+python -m venv pyautogen
+source pyautogen/bin/activate  # On Windows use `.\pyautogen\Scripts\activate`
 ```
 
 ### 3. Install Python Requirements
